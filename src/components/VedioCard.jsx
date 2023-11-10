@@ -44,7 +44,7 @@ export default function VedioCard({displyVideo,setDeleteVedioStatus}) {
   return (
     <>
      <Card style={{ width: '100%' , height:'370px'}} className='mb-4' draggable onDragStart={(e)=>drageStart(e,displyVideo?.id)}>
-      <Card.Img onClick={handleShow} height={'200px'} variant="top" src={displyVideo.url} />
+      <Card.Img onClick={handleShow} height={'200px'} variant="top" src={displyVideo.url}/>
       <Card.Body>
         <Card.Title className='d-flex justify-content-between align-items-center'>Card Title</Card.Title>
          <h6>{displyVideo.caption}</h6>
